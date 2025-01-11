@@ -10,4 +10,5 @@ When an open port is found, it will attempt to send the password from the user b
 
 It is expected to receive a private RSA key that will allow you to access to the next level as the user bandit17
 
-![image (95)](https://github.com/user-attachments/assets/4e675564-80df-430e-9de3-1652ff06513b)
+
+![image (96)](https://github.com/user-attachments/assets/50b99e3f-354c-474f-937c-e49953d68a55)
