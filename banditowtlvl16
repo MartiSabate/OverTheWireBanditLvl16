@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Scan ports from 31000 to 32000
+for i in {31000..32000} ; do
+        #Set server name and indicate the port which value will increse for each iteration
+        SERVER="localhost"
+        PORT=$i
+        # Perform the tcp connection to a specific port. If the connection is successfull it will be printed on screen and an SSL connecction will be performed to the port, sendintg the user password, and saving the output in a file.
+        (echo > /dev/tcp/$SERVER/$PORT) >& /dev/null && echo "[+] Open port found > $PORT" && cat /etc/bandit_pass/bandit16 | openssl s_client -connect localhost:$PORT -quiet 2>/dev/null > $PORT.txt
+done
