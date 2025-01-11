@@ -1,8 +1,10 @@
 # OverTheWireBanditLvl16
 
-This is the level 16 automatic solution script for Over The Wire Bandit Linux challenge!
+This is the level 16 automatic solution script for Over The Wire Bandit Linux challenge! 
 
-This script will first scan for open ports in the range from 31000 to 32000.
+The goal of this script is to retrieve an SSH private key for the user bandit17.
+
+The script will first scan for open ports from 31000 to 32000.
 
 When an open port is found, it will attempt to send the password from the user bandit16 found in /etc/bandit_pass/bandit16 through an SSL client and store the response in a file named <PORT_NUMBER>.txt
 
